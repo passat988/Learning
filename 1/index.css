@@ -1,0 +1,93 @@
+body{
+    background-color:aquamarine;
+    background-image: url(photo5381866774242376295.jpg);
+}
+.main-content{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 80px;
+    padding-bottom: 20px;
+    background: linear-gradient(to top, #fefcea, #f1da36);
+    border: 1px solid black;
+    font-weight: bold;
+    /*opacity: 0.8;
+    /*filter: alpha(opacity=70);
+    /*для IE8 и более ранних версий*/
+    font-family: 'PT Sans', sans-serif;
+    text-align: center;
+}
+h1{
+    font-size: 60px;
+    color: red;
+}
+img{
+    width: 80%;
+    margin: 5%;
+    border: 15px;
+    border-top: dashed red;
+    border-left: dotted blue;
+    border-bottom: double green;
+    border-right: solid yellow;
+    border-width: 10px;   
+}
+.song{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 80px;
+    background: linear-gradient(to top, #fefcea, #f1da36);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+.first-line, .fifth-line {
+    color:aqua;
+    font-style: italic;
+    text-decoration: underline;
+}
+.second-line, .sixth-line{
+    color: blue;
+    font-weight: bold;
+    text-decoration: line-through;
+}
+.third-line, .seventh-line{
+    color: red;
+    text-decoration: overline;
+}
+.fourth-line ,.eighth-line{
+    vertical-align: sub;
+    font-size: 15px;
+    color: brown;
+}
+.sup{
+    vertical-align: super;
+    font-size: 15px;
+}
+.ninth-line{
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    color:green;
+    border: 1px dashed green;
+}
+.statham{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 50px;
+    background: linear-gradient(to top, #fefcea, #f1da36);
+    transform: rotate(180deg);
+    text-align: center;
+
+    /*-moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -o-transform: rotate(180deg);*/
+}
+@media screen and (max-width: 500px) {
+    h1 {
+        color: green;
+    }
+}
