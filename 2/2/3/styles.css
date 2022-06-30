@@ -1,0 +1,25 @@
+body{
+    width: 700px;
+    margin: 0 auto;
+    text-align: justify;
+}
+h1{
+    text-align: center;
+    font-weight: lighter;
+}
+div{
+    margin: 0 20px 20px 0;
+    border: 1px solid black;
+    padding: 20px;
+}
+a {
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+.more{
+    display: block;
+    width: 50px; 
+    margin: 0 0 0 auto;
+}

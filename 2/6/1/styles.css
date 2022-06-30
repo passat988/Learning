@@ -1,0 +1,89 @@
+*{
+    
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background-color: rgb(235, 235, 235);
+    font-family: sans-serif;
+}
+.wrapper{
+    width: 890px;
+    margin: 0 auto;
+}
+header{
+    height: 50px;
+    background-color: #F8AA03;
+}
+#menu {
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-left: 20px;
+}
+
+#menu a {
+    display: block; 
+    text-decoration: none;
+    margin: auto 10px auto 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+}
+
+#menu a:hover,
+#menu a.active {
+    color: white;
+    text-decoration: underline;
+}
+.container{
+    display: flex;
+    text-align: justify;
+    background-color: white;
+}
+.left-column{
+    width: 530px;
+    padding: 20px 10px 20px 20px;
+    
+}
+h1{
+    margin: 0;
+}
+h2{
+    margin: 0;
+}
+.img-bee-first{
+    width: 100%;
+}
+.honey-price-table{
+    width: 100%;
+    text-align: center;
+}
+.honey-price-table th{
+    background-color: gray;
+    border: 1px solid black;
+}
+.honey-price-table td{
+    border: 1px solid black;
+}
+.img-bee-second{
+    width: 100%;
+}
+.right-column{
+    width: 360px;
+    padding: 20px 20px 20px 10px;
+    
+    
+}
+footer{
+    width: 100%;
+    height: 75px;
+    background-color: #F8AA03;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}

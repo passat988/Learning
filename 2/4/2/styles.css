@@ -1,0 +1,39 @@
+*{
+    
+    box-sizing: border-box;
+}
+.wrapper{
+    width: 1200px;
+    margin: 30px auto;
+    border: 1px solid black;
+}
+.header{
+    height: 250px ;
+    padding: 20px;
+    border: 1px solid black;
+}
+.container{
+    border: 1px solid black;
+    display: flex;
+}
+.sidebar{
+    border: 1px solid black;
+    width: 300px;
+    height: 700px;
+    padding: 20px;
+    height: 900px;
+    
+    
+}
+.content{
+    border: 1px solid black;
+    padding: 20px;
+    width: 860px;
+    margin-right: 40px;
+    
+}
+.footer{
+    border: 1px solid black ;
+    padding: 20px;
+    height: 100px;
+}
