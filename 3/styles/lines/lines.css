@@ -2,24 +2,17 @@
   --main-text-color: #c0ab77;
 }
 
-.heading-box{
-    display: flex;
-    align-items: center;
-}
-
 .left-lines-heading{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     width: 15%;
-    /* border: 1px solid red; */
 }
 
 .gold-line{
     height: 1px;
     width: 80%;
     margin: 0 15px;
-
     border: 1px solid var(--main-text-color);
 }
 
@@ -32,7 +25,6 @@
 
 .right-lines-heading{
     width: 15%;
-    /* border: 1px solid red; */
 }
 
 .services-info-box-heading{
@@ -47,4 +39,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+@media screen and (max-width: 768px) {
+.gray-line{
+    margin: 8px 15px;
+    width: 30px;
+}
+
+.gold-line{
+    width: 15px ;
+}
+
 }
