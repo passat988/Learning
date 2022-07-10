@@ -1,0 +1,170 @@
+.membership {
+  display: flex;
+  width: 100%;
+  background-image: url(./img/promo/promo-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.benefits {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.benefits-container-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.benefits-container-text h2 {
+  color: var(--main-text-color);
+  margin: 30px 0;
+  font-size: 33px;
+}
+
+.benefits-paragraph {
+  max-width: 700px;
+  text-align: center;
+  margin: 30px 0;
+  font-size: 25px;
+  color: white;
+}
+
+.benefits-button {
+  margin: 30px 0;
+  color: white;
+  width: 230px;
+  height: 62px;
+  background-color: var(--main-text-color);
+  border: 1px solid var(--main-text-color);
+  font-size: 25px;
+}
+
+.benefits-button:hover {
+  background-color: #52482e;
+}
+
+.subscribe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+
+.subscribe-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.subscribe-container h2 {
+  color: var(--main-text-color);
+  margin: 30px 0;
+  font-size: 33px;
+}
+
+.subscribe-img img {
+  margin-top: 30px;
+  width: 150px;
+}
+
+.subscribe-prompting {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  font-size: 25px;
+  color: white;
+}
+
+.subscribe-button-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 500px;
+  height: 66px;
+  margin-bottom: 20px;
+}
+
+.subscribe-input {
+  width: 60%;
+  height: 100%;
+  font-size: 20px;
+  border: none;
+  margin-right: 4px;
+  text-indent: 15px;
+}
+
+.subscribe-submit {
+  width: 30%;
+  height: 100%;
+  font-size: 20px;
+  color: white;
+  background-color: var(--main-text-color);
+  border: 1px solid var(--main-text-color);
+  font-size: 25px;
+}
+
+@media screen and (max-width: 768px) {
+  .membership {
+    flex-direction: column;
+  }
+
+  .benefits{
+    width: 100%;
+  }
+
+  .subscribe{
+    width: 100%;
+  }  
+
+  .benefits-container-text h2 {
+    font-size: 24px;
+    margin: 20px 10px;
+  }
+
+  .benefits-paragraph{
+    font-size: 16px;
+    margin: 0 10px 10px;
+  }
+
+  .benefits-button{
+    width: 160px;
+    height: 45px;
+    font-size: 15px;
+    text-transform: uppercase;
+  }
+
+  .subscribe-container h2{
+    font-size: 24px;
+    margin: 20px 10px;
+  }
+
+  .subscribe-prompting{
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .subscribe-button-container{
+    height: 45px;
+    width: 80%;
+    max-width: 700px;
+  }
+
+  .subscribe-input{
+    font-size: 16px;
+  }
+
+  .subscribe-submit{
+    font-size: 14px;
+  }
+}

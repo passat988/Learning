@@ -1,0 +1,105 @@
+.welcoming-information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 850px;
+  background: #dddddd url(./img/greeting/horse.png);
+  background-position: 1210px 50px;
+  background-repeat: no-repeat;
+  font-size: 25px;
+}
+
+.heading-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.welcoming-container {
+  display: flex;
+  width: 80%;
+  min-width: 700px;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 60px;
+}
+
+.welcoming-information-heading {
+  text-align: center;
+  font-size: 33px;
+  align-self: center;
+  margin-top: ;
+  margin-bottom: 120px;
+  color: #1b1b1b;
+}
+
+.welcoming-information p,
+.welcoming-button {
+  margin-bottom: 60px;
+}
+
+.welcoming-text {
+  max-width: 660px;
+  color: #848484;
+}
+
+.welcoming-text-stylized {
+  max-width: 660px;
+  color: var(--main-text-color);
+}
+
+.link-container {
+  max-width: 600px;
+}
+
+.welcoming-button {
+  color: var(--main-text-color);
+  font-size: 20px;
+  width: 230px;
+  height: 65px;
+  background: none;
+  border: 1px solid var(--main-text-color);
+}
+
+.welcoming-button:hover {
+  color: black;
+  border-color: black;
+}
+
+@media screen and (max-width: 768px) {
+  .welcoming-information{
+    min-height: 400px;
+  }
+
+  .welcoming-information-heading{
+    font-size: 20px;
+  }
+  
+  .welcoming-container{
+    width: 90%;
+    margin: 0 20px;
+    min-width: 0;
+    align-items:center;
+}
+
+  .welcoming-container p{
+    font-size: 13px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .heading-box{
+    margin-bottom: 20px;
+  }
+
+  .welcoming-button{
+    font-size: 20px;
+    height: 45px;
+    width: 160px;
+    margin-bottom: 20px;
+  }
+}

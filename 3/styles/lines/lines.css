@@ -1,0 +1,53 @@
+:root {
+  --main-text-color: #c0ab77;
+}
+
+.left-lines-heading{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 15%;
+}
+
+.gold-line{
+    height: 1px;
+    width: 80%;
+    margin: 0 15px;
+    border: 1px solid var(--main-text-color);
+}
+
+.gray-line{
+    height: 1px;
+    width: 90%;
+    margin: 15px;
+    border: 1px solid #848484;
+}
+
+.right-lines-heading{
+    width: 15%;
+}
+
+.services-info-box-heading{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.price-section-box-heading{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media screen and (max-width: 768px) {
+.gray-line{
+    margin: 8px 15px;
+    width: 30px;
+}
+
+.gold-line{
+    width: 15px ;
+}
+
+}
