@@ -37,7 +37,7 @@
   flex-wrap: wrap;
   width: 100%;
   max-width: 750px;
-  margin-left: 60px;
+  margin-left: 5px;
 }
 
 .footer-links{
@@ -70,6 +70,7 @@
   width: 206px;
   height: 38px;
   text-indent: 10px;
+  color: white;
 }
 
 .footer-button-subscribe-prompting {
@@ -92,7 +93,8 @@
 }
 
 .footer-socials{
-  margin: 10px 20px;
+  margin-top: 10px;
+  margin-right: 20px;
 
 }
 

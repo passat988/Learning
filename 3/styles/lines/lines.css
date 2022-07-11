@@ -13,14 +13,14 @@
     height: 1px;
     width: 80%;
     margin: 0 15px;
-    border: 1px solid var(--main-text-color);
+    background-color:  var(--main-text-color);
 }
 
 .gray-line{
     height: 1px;
     width: 90%;
     margin: 15px;
-    border: 1px solid #848484;
+    background-color:  #848484;
 }
 
 .right-lines-heading{

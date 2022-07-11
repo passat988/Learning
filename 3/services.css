@@ -21,6 +21,13 @@
   text-align: center;
 }
 
+.service-devider{
+  width: 200px;
+  height: 1px;
+  background-color: #c1c1c1;
+  margin: 40px 0;
+}
+
 .services-img-container {
   display: flex;
   justify-content: space-around;

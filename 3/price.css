@@ -39,8 +39,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0 15px 15px;
   width: 280px;
-  height: 370px;
   border: 1px solid var(--main-text-color);
 }
 
@@ -63,7 +63,8 @@
 
 .lesson-paragraph {
   text-align: center;
-  padding: 15px;
+  padding: 0 10%;
+  margin: 40px 0;
 }
 
 .button-booking {
@@ -78,4 +79,41 @@
 
 .button-booking:hover {
   background-color: #52482e;
+}
+
+@media screen and (max-width: 768px){
+  .price-section{
+    min-height: 500px
+  }
+
+  .price-text-stylized{
+    font-size: 16px;
+    margin: 20px;
+    padding: 0;
+  }
+
+  .visitor-status{
+    margin-top: 8px;
+    font-size: 16px;
+  }
+
+  .lesson-cost{
+    font-size: 22px;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+  .lesson-paragraph {
+    font-size: 14px;
+    margin: 10px 0;
+  }
+
+  .button-booking{
+    height: 30px;
+    font-size: 15px;
+  }
+
+  .price-container{
+    margin-bottom: 5px;
+  }
 }

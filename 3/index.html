@@ -29,11 +29,14 @@
           </div>
           <div class="header-subscribe">
             <span class="subs-preview">Sign up to newsletter!</span>
-            <input
-              type="text"
-              placeholder="Your email"
-              class="header-input"
-            /><span class="header-arrow">→</span>
+            <div class="header-input-container">
+              <input
+                type="text"
+                placeholder="Your email"
+                class="header-input"
+              />
+              <span class="header-arrow">→</span>
+            </div>
           </div>
         </div>
         <div class="logo-and-menu-container">
@@ -141,6 +144,7 @@
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum
           suspendisse ultrices gravida. Risus commodo viverra
         </p>
+        <div class="service-devider"></div>
         <div class="services-img-container">
           <img src="./img/services/horse1.png" alt="horse pic1" />
           <img src="./img/services/horse2.png" alt="horse pic2" />
@@ -216,44 +220,46 @@
           </div>
         </div>
         <span class="news-heading-source">From our blog</span>
-        <div class="news-container">
-          <div class="news-one-day">
-            <div class="news-date">24 Apr</div>
-            <div class="news-text">
-              <span class="news-heading"
-                >HOW TO INTRODUCE NEW HORSES TO YOUR HERD</span
-              >
-              <p class="news-paragraph">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-              <a href="#">VIEV MORE</a>
+        <div class="news-wrapper">
+          <div class="news-container">
+            <div class="news-one-day">
+              <div class="news-date">24 Apr</div>
+              <div class="news-text">
+                <span class="news-heading">
+                  HOW TO INTRODUCE NEW HORSES TO YOUR HERD
+                </span>
+                <p class="news-paragraph">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <a href="#">VIEV MORE</a>
+              </div>
             </div>
-          </div>
-          <div class="news-one-day">
-            <div class="news-date">24 Apr</div>
-            <div class="news-text">
-              <span class="news-heading"
-                >HOW TO INTRODUCE NEW HORSES TO YOUR HERD</span
-              >
-              <p class="news-paragraph">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-              <a href="#">VIEV MORE</a>
+            <div class="news-one-day">
+              <div class="news-date">24 Apr</div>
+              <div class="news-text">
+                <span class="news-heading">
+                  HOW TO INTRODUCE NEW HORSES TO YOUR HERD
+                </span>
+                <p class="news-paragraph">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <a href="#">VIEV MORE</a>
+              </div>
             </div>
-          </div>
-          <div class="news-one-day">
-            <div class="news-date">08 Apr</div>
-            <div class="news-text">
-              <span class="news-heading"
-                >HOW TO INTRODUCE NEW HORSES TO YOUR HERD</span
-              >
-              <p class="news-paragraph">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-              <a href="#">VIEV MORE</a>
+            <div class="news-one-day">
+              <div class="news-date">08 Apr</div>
+              <div class="news-text">
+                <span class="news-heading">
+                  HOW TO INTRODUCE NEW HORSES TO YOUR HERD
+                </span>
+                <p class="news-paragraph">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <a href="#">VIEV MORE</a>
+              </div>
             </div>
           </div>
         </div>
@@ -296,10 +302,10 @@
         </div>
       </section>
       <section class="footer">
-        <div class="footer-logo-img">
-          <img src="./img/header/logo.png" alt="logo" />
-        </div>
         <div class="footer-container">
+          <div class="footer-logo-img">
+            <img src="./img/header/logo.png" alt="logo" />
+          </div>
           <div class="footer-links">
             <a href="#">Home</a>
             <a href="#">Features</a>
@@ -317,10 +323,10 @@
           <div class="footer-socials">
             <span>Follow us on</span>
             <div class="footer-social-logo">
-            <a href=""><img src="./img/header/twitter.png" alt="" /></a>
-            <a href=""><img src="./img/header/fb.png" alt="" /></a>
-            <a href=""><img src="./img/header/pinterest.png" alt="" /></a>
-            <a href=""><img src="./img/header/inst.png" alt="" /></a>
+              <a href=""><img src="./img/header/twitter.png" alt="" /></a>
+              <a href=""><img src="./img/header/fb.png" alt="" /></a>
+              <a href=""><img src="./img/header/pinterest.png" alt="" /></a>
+              <a href=""><img src="./img/header/inst.png" alt="" /></a>
             </div>
           </div>
           <div class="footer-input-container">
@@ -328,12 +334,13 @@
               >Subscribe to our newsletter</span
             >
             <div class="footer-subscribing">
-              <div><input
-                type="text"
-                placeholder="Your email address"
-                class="footer-input-subscribe-prompting"
-              />
-              <button class="footer-button-subscribe-prompting">SEND</button>
+              <div>
+                <input
+                  type="email"
+                  placeholder="Your email address"
+                  class="footer-input-subscribe-prompting"
+                />
+                <button class="footer-button-subscribe-prompting">SEND</button>
               </div>
             </div>
           </div>
