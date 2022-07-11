@@ -1,13 +1,13 @@
 @import url(../zeroing/zeroing.css);
 @import url(../lines/lines.css);
-@import url(../../header.css);
-@import url(../../welcoming.css);
-@import url(../../membership.css);
-@import url(../../services.css);
-@import url(../../price.css);
-@import url(../../news.css);
-@import url(../../review.css);
-@import url(../../photo-gallery\ and\ location.css);
+@import url(../header.css);
+@import url(../welcoming.css);
+@import url(../membership.css);
+@import url(../services.css);
+@import url(../price.css);
+@import url(../news.css);
+@import url(../review.css);
+@import url(../photo-gallery\ and\ location.css);
 
 :root {
   --main-text-color: #c0ab77;
@@ -19,6 +19,10 @@
   flex-direction: column;
   align-items: center;
   position: relative;
+}
+
+button {
+  transition: .4s;
 }
 
 .footer {
@@ -36,7 +40,7 @@
   justify-content: space-around;
   flex-wrap: wrap;
   width: 100%;
-  max-width: 750px;
+  max-width: 800px;
   margin-left: 5px;
 }
 
@@ -85,6 +89,7 @@
 .footer-input-container{
   display: flex;
   flex-direction: column;
+  margin-top: 10px;
 }
 
 .footer-social-logo {
@@ -113,4 +118,18 @@
 
 .footer-socials a img {
   margin: 10px;
+}
+
+@media screen and (max-width:824px){
+  .footer-subscribe-prompting{
+    text-align: center;
+  }
+} 
+
+@media screen and (max-width:549px){
+  .footer-socials{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }

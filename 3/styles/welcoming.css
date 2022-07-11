@@ -5,7 +5,7 @@
   align-items: center;
   width: 100%;
   min-height: 850px;
-  background: #dddddd url(./img/greeting/horse.png);
+  background: #dddddd url(../img/greeting/horse.png);
   background-position: 1210px 50px;
   background-repeat: no-repeat;
   font-size: 25px;

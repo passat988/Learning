@@ -1,7 +1,7 @@
 .membership {
   display: flex;
   width: 100%;
-  background-image: url(./img/promo/promo-bg.png);
+  background-image: url(../img/promo/promo-bg.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -112,6 +112,10 @@
   background-color: var(--main-text-color);
   border: 1px solid var(--main-text-color);
   font-size: 25px;
+}
+
+.subscribe-submit:hover{
+  background-color: #52482e;
 }
 
 @media screen and (max-width: 768px) {

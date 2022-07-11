@@ -123,7 +123,7 @@
   justify-content: center;
   width: 100%;
   min-height: 940px;
-  background-image: url(./img/header/bg.png);
+  background-image: url(../img/header/bg.png);
   background-position-x: center;
   background-size: cover;
 }
