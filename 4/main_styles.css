@@ -89,6 +89,10 @@ header{
     height: 60px;
 }
 
+/* .header-navigation li:hover{
+    color: #000;
+} */
+
 .header-link-container{
     display: flex;
     border-radius: 10px;
@@ -103,6 +107,7 @@ header{
     background-size: cover;
     background-position: bottom;
     transition: .8s;
+    /* color: #000; */
 }
 
 .header-navigation a{
@@ -114,7 +119,7 @@ header{
 
 .header-navigation a:hover{
     text-decoration: underline;
-    color: #000;
+    color: #000; 
     border-radius: 5px;
     transition: 0s;
     transition-timing-function: ease-in-out;
