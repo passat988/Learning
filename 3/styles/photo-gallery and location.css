@@ -1,0 +1,36 @@
+.photo-gallery {
+  width: 100%;
+}
+
+.photo-gallery-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.photo-gallery-container img {
+  width: 20%;
+  flex-grow: 1;
+  min-width: 120px;
+  max-height: 300px;
+  object-fit: cover;
+}
+
+.location {
+  width: 100%;
+}
+
+.location-text {
+  display: flex;
+  height: 70px;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background: #363636;
+  font-size: 18px;
+  color: #b89f5c;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding: 0 10px;
+}

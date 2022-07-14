@@ -1,0 +1,119 @@
+.price-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 840px;
+  background-image: url(../img/subscriptions/subscriptions-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.price-icon {
+  margin-top: 30px;
+}
+
+.price-text-stylized {
+  max-width: 733px;
+  margin: 30px 40px;
+  font-size: 25px;
+  color: var(--main-text-color);
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 50px;
+}
+
+.price-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 90%;
+  max-width: 1206px;
+  color: white;
+  margin-bottom: 40px;
+}
+
+.price-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 15px 15px;
+  width: 280px;
+  border: 1px solid var(--main-text-color);
+}
+
+.visitor-status {
+  margin-top: 25px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.lesson-cost {
+  margin: 25px auto;
+  font-size: 40px;
+}
+
+.price-line {
+  border-color: #c0ab77;
+  size: 10px;
+  width: 280px;
+}
+
+.lesson-paragraph {
+  text-align: center;
+  padding: 0 10%;
+  margin: 40px 0;
+}
+
+.button-booking {
+  margin-top: auto;
+  width: 80%;
+  height: 60px;
+  color: white;
+  background-color: var(--main-text-color);
+  border: 1px solid var(--main-text-color);
+  font-size: 25px;
+}
+
+.button-booking:hover {
+  background-color: #52482e;
+}
+
+@media screen and (max-width: 768px){
+  .price-section{
+    min-height: 500px
+  }
+
+  .price-text-stylized{
+    font-size: 16px;
+    margin: 20px;
+    padding: 0;
+  }
+
+  .visitor-status{
+    margin-top: 8px;
+    font-size: 16px;
+  }
+
+  .lesson-cost{
+    font-size: 22px;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+  .lesson-paragraph {
+    font-size: 14px;
+    margin: 10px 0;
+  }
+
+  .button-booking{
+    height: 30px;
+    font-size: 15px;
+  }
+
+  .price-container{
+    margin-bottom: 5px;
+  }
+}
