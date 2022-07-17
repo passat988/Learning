@@ -38,7 +38,6 @@ html{
     position: absolute;
     width: 100%;
     max-width: 1282px;
-    /* border: 1px solid red; */
     top: 0;
     z-index: -100;
 }
@@ -50,7 +49,7 @@ html{
     height: 100vh;
     top: 0;
     left: 0;
-    z-index: -100000;
+    z-index: -1000;
     filter: blur(5px);
 }
 
@@ -89,10 +88,6 @@ header{
     height: 60px;
 }
 
-/* .header-navigation li:hover{
-    color: #000;
-} */
-
 .header-link-container{
     display: flex;
     border-radius: 10px;
@@ -107,7 +102,6 @@ header{
     background-size: cover;
     background-position: bottom;
     transition: .8s;
-    /* color: #000; */
 }
 
 .header-navigation a{
@@ -116,13 +110,9 @@ header{
     cursor: pointer;
 }
 
-
-.header-navigation a:hover{
+.header-link-container:hover > a{
+    color: #000;
     text-decoration: underline;
-    color: #000; 
-    border-radius: 5px;
-    transition: 0s;
-    transition-timing-function: ease-in-out;
 }
 
 .header-navigation a:active{
@@ -138,33 +128,6 @@ nav{
     display: flex;
     align-items: center;
 }
-
-/* @media screen and (max-width: 947px) {
-    .header-navigation{
-        flex-direction: column;
-        font-size: 15px;
-        gap: 10px 40px;
-    }
-
-    .header-navigation li{
-        height: 30px;
-    }
-
-    .header-link-container{
-    width: 250px;
-    padding: 0 10px;
-    }
-    .advances{
-        flex-direction: column;
-    }
-
-    .header-navigation a:hover{
-        background: none;
-        color: var(--color-main-ogange);
-        transition: none;
-    }
-} */
-
 
 .main-page-section{
     display: flex;
@@ -191,7 +154,7 @@ nav{
 .main-page-heading-container{
     display: flex;
     flex-direction: column;
-
+    align-items: center;
 }
 
 .main-heading{
@@ -223,6 +186,46 @@ nav{
     font-size: 25px;
 }
 
+@media screen and (max-width: 768px) {
+    .main-page-wrapper{
+        min-height: 800px;
+        padding-top: 140px;
+    }
+
+    header{
+        justify-content: space-between;
+    }
+
+    .header-navigation{
+        flex-direction: column;
+        font-size: 15px;
+        gap: 0 40px;
+        margin: 10px 0;
+    }
+
+    .header-navigation li{
+        height: 30px;
+    }
+
+    .header-link-container{
+    width: 170px;
+    padding: 0 10px;
+    }
+
+    .main-heading{
+        font-size: 35px;
+    }
+
+    .sourse-of-product, .feature{
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    .advances{
+        flex-direction: column;
+    }
+} 
+
 .catalog-link-container{
     display: flex;
     justify-content: center;
@@ -230,7 +233,6 @@ nav{
     padding: 20px;
     flex-grow: 1;
     margin-top: 40px;
-    /* border: 1px solid blue; */
 }
 
 .catalog-link{
@@ -249,6 +251,29 @@ nav{
 
 .catalog-link:hover{
     background-color: var(--color-main-ogange);
+}
+
+.photo-section{
+    display: flex;
+    width: 100%;
+    max-width: 1100px;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.photo-section-paragraph{
+    display: flex;
+    color: #fff;
+    font-family: Oswald;
+    font-size: 25px;
+    padding: 30px 30px;
+    text-align: justify;
+}
+
+@media screen and (max-width: 768px){
+    .photo-section{
+        flex-direction: column;
+}
 }
 
 .location{
@@ -282,7 +307,11 @@ footer{
 }
 
 .footer-location-text{
-    margin-right: 30px;
+    margin: 0 30px;
+}
+
+footer a{
+    color: var(--color-main-ogange);
 }
 
 .bgvideo2{
@@ -296,14 +325,15 @@ footer{
 .catalog{
     display: flex;
     flex-wrap: wrap;
-    min-width: 995px; 
-    /* border: 2px solid red; */
+    justify-content: space-evenly;
+    max-width: 995px;
+    width: 100%;
 }
 
 .main-page-wrapper2{
     flex-direction: column;
     align-items: center;
-    margin-top: 120px;
+    margin-top: 140px;
 }
 
 .main-page-wrapper2 h1{
@@ -345,6 +375,30 @@ footer{
     height: 385px;
     transition: .5s;
 }
+
+ @media screen and (max-width: 768px) {
+    .main-page-wrapper2{
+        margin-top: 0px;
+    }
+
+    .catalog-item{
+        min-width: 250px;
+    }
+
+    .catalog-img-container{
+    width: 200px;
+    height: 230px;
+    }
+
+    .catalog-item-img{
+        width: 200px;
+        height: 230px;
+    }
+
+    .catalog-link{
+        width: 200px;
+    }
+} 
 
 .characteristics{
     display: flex;
