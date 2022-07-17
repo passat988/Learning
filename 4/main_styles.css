@@ -367,8 +367,8 @@ footer a{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    max-width: 995px;
     width: 100%;
+    gap: 20px;
 }
 
 .main-page-wrapper2{
@@ -387,18 +387,16 @@ footer a{
     min-width: 300px;
     border: 2px solid var(--color-main-ogange);
     border-radius: 5px;
-    margin: 15px;
     overflow: hidden;
     background-color: rgba(53, 53, 53, 0.8);
+    padding: 15px;
+    gap: 10px;
 }
 
 .catalog-img-container{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 250px;
-    height: 320px;
-    margin-top: 15px;
 }
 
 .catalog-item-img{
@@ -452,10 +450,6 @@ footer a{
 .catalog-item-name{
     color: var(--color-main-ogange);
     font-size: 35px;
-}
-
-.catalog-item-link{
-    margin: 15px auto;
 }
 
 .content-box{
