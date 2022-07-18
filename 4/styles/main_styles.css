@@ -1,0 +1,64 @@
+@import url(./main_page_styles.css);
+@import url(./wrapper_and_background.css);
+@import url(./photo_section_and_location.css);
+@import url(./pages.css);
+
+
+@font-face {
+    font-family: Lobster-Regular;
+    src: url(../styles/font/Lobster-Regular.ttf);
+}
+
+@font-face {
+    font-family: Oswald;
+    src: url(../styles/font/Oswald-VariableFont_wght.ttf);
+}
+
+:root{
+    --color-main-ogange:#ffa52e;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: Lobster-Regular;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 40px;
+    background-color: #505050;
+    color: #ffffff;
+    font-family: Oswald;
+    padding: 0 50px;
+}
+
+.footer-location-text{
+    margin-left: 30px;
+    margin-right: 13px;
+    text-align: center;
+}
+
+footer a{
+    color: var(--color-main-ogange);
+}
+
+@media screen and (max-width: 768px){
+    footer{
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+
+
