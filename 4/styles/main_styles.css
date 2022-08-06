@@ -1,8 +1,9 @@
 @import url(./main_page_styles.css);
-@import url(./wrapper_and_background.css);
+/* @import url(./theme_dark.css); */
 @import url(./photo_section_and_location.css);
 @import url(./pages.css);
 
+/* @import url(./wrapper_and_background.css); */
 
 @font-face {
     font-family: Lobster-Regular;
