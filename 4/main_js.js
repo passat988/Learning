@@ -1,31 +1,4 @@
-const video = document.querySelector(".bgvideo")
-const wrap = document.querySelector(".wrapper")
 
-function changeTheme(){
-    if (video.classList.contains("bgvideo")){
-        video.classList.remove("bgvideo");
-        video.classList.add("bgvideo-theme");
-    } else if(video.classList.contains("bgvideo-theme")){
-        video.classList.remove("bgvideo-theme");
-        video.classList.add("bgvideo");
-    }
-
-    if (wrap.classList.contains("wrapper")){
-        wrap.classList.remove("wrapper");
-        wrap.classList.add("wrapper-theme");
-    } else if(wrap.classList.contains("wrapper-theme")){
-        wrap.classList.remove("wrapper-theme");
-        wrap.classList.add("wrapper");
-    }
-}
-
-let activeTheme = localStorage.getItem('bgvideo-theme')
-console.log(activeTheme)
-
-if (activeTheme != null){
-    video.classList.remove("bgvideo");
-    video.classList.add("bgvideo-theme");
-}
 
 
 
@@ -92,3 +65,17 @@ function handleTouchMove(evt) {
     xDown = null;
     yDown = null;                                             
 };
+
+
+thumbs.onclick = function(event) {
+    let thumbnail = event.target.closest('a');
+
+    if (!thumbnail) return;
+    showThumbnail(thumbnail.href, thumbnail.title);
+    event.preventDefault();
+  }
+
+  function showThumbnail(href, title) {
+    largeImg.src = href;
+    largeImg.alt = title;
+  }
