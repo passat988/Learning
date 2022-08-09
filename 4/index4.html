@@ -22,15 +22,16 @@
       <div class="bg-video"></div>
       <header>
         <div class="header-img-box">
-          <a href="./index.html">
-            <img
-              src="./img/1639402748_2-abrakadabra-fun-p-soti-na-prozrachnom-fone-3.png"
-              alt="logo"
-              class="header-logo"
-            />
-          </a>
+          <img
+            src="./img/1639402748_2-abrakadabra-fun-p-soti-na-prozrachnom-fone-3.png"
+            alt="logo"
+            class="header-logo"
+          />
         </div>
-        <nav>
+        <div class="mobile-menu">
+          <span></span>
+        </div>
+        <nav class="navigation">
           <ul class="header-navigation">
             <li>
               <div class="header-link-container">
@@ -54,6 +55,13 @@
             </li>
           </ul>
         </nav>
+        <div class="theme-switch-wrapper">
+          <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider round"></div>
+          </label>
+          <em class="switch-label">Switch</em>
+        </div>
       </header>
       <section class="main-page-section main-page-section2">
         <div class="main-page-wrapper">
@@ -68,7 +76,11 @@
                   <ul class="advances-list">
                     <li>
                       Робити ваші замовлення Ви можете за телефоном
-                      <a class="phone-number" >+380 098 96 56 054</a> або заповнити форму нижче
+                      <span class="number-and-img"
+                        ><a class="phone-number">+380 098 96 56 054 </a>
+                        <img class="copy-img" src="./img/copy.jpg" alt=""
+                      /></span>
+                      або заповнити форму нижче
                       <!-- href="tel:+3800989656054" -->
                     </li>
                     <li>
@@ -86,9 +98,15 @@
                 </div>
               </div>
               <div class="catalog-link-container">
-               <a href="./index.html" class="catalog-link">На головну</a>
+                <a href="./index.html" class="catalog-link">На головну</a>
               </div>
-              <button id="myBtn" class="catalog-link-button catalog-link" value="Форма для замовлення">Форма для замовлення</button>
+              <button
+                id="myBtn"
+                class="catalog-link-button catalog-link"
+                value="Форма для замовлення"
+              >
+                Форма для замовлення
+              </button>
               <div id="myModal" class="modal">
                 <div class="modal-content">
                   <span class="close">&times;</span>
@@ -99,50 +117,57 @@
                     <form>
                       <div>
                         <label for="name">Ім'я</label>
-                        <input type="text" name="name" required>
+                        <input type="text" name="name" required />
                       </div>
                       <div class="radio">
-                        <span>Тара</span> <br>
+                        <span>Тара</span> <br />
                         <label>
-                          <input type="radio"  value="Скляна">Скляна
+                          <input type="radio" value="Скляна" />Скляна
                           <div class="radio-control glass"></div>
                         </label>
                         <label>
-                          <input type="radio"  value="Харчовий пластик">Харчовий пластик
+                          <input
+                            type="radio"
+                            value="Харчовий пластик"
+                          />Харчовий пластик
                           <div class="radio-control plastic"></div>
                         </label>
                       </div>
                       <div>
-                        <label for="number">Номер для зворотнього зв'язку</label>
-                        <input type="number">
+                        <label for="number"
+                          >Номер для зворотнього зв'язку</label
+                        >
+                        <input type="number" />
                       </div>
                       <div>
                         <label for="product">Прорукція</label>
                         <select name="product">
                           <option>Оберіть продукт</option>
-                          <option value="Мед">Мед</option> 
+                          <option value="Мед">Мед</option>
                           <option value="Реманент">Реманент</option>
-                        </select> 
-                        <div class="select-arrow"></div> 
-                      </div> 
-                      <button type="submit">Відправити</button> 
-                    </form> 
+                        </select>
+                        <div class="select-arrow"></div>
+                      </div>
+                      <button type="submit">Відправити</button>
+                    </form>
                   </div>
                 </div>
               </div>
-
             </div>
           </div>
-          <footer>
-            <span class="footer-location-text">
-              Житомирська обл., Черняхівський р-н, с. Високе
-            </span>
-            <span class="footer-location-text">Микола:</span>
-            <a href="tel:+3800989656054">+380 098 96 56 054 </a>
-          </footer>
         </div>
       </section>
     </div>
+    <div class="overlay"><span class="copyred">Скопировано!</span></div>
+    <footer>
+      <span class="footer-location-text">
+        Житомирська обл., Черняхівський р-н, с. Високе
+      </span>
+      <span class="footer-location-text">Микола:</span>
+      <a href="tel:+3800989656054">+380 098 96 56 054 </a>
+    </footer>
     <script src="./main_js.js"></script>
+    <script src="./theme.js"></script>
+    <script src="./modal.js"></script>
   </body>
 </html>

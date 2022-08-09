@@ -28,7 +28,10 @@
             class="header-logo"
           />
         </div>
-        <nav>
+        <div class="mobile-menu">
+          <span></span>
+        </div>
+        <nav class="navigation">
           <ul class="header-navigation">
             <li>
               <div class="header-link-container">
@@ -52,7 +55,13 @@
             </li>
           </ul>
         </nav>
-        <div class="theme"><input type="button" value="Змінити тему" class="theme-button" onclick="changeTheme()"></input></div>
+        <div class="theme-switch-wrapper">
+          <label class="theme-switch" for="checkbox">
+          <input type="checkbox" id="checkbox" />
+          <div class="slider round"></div>
+        </label>
+          <em class="switch-label">Switch</em>
+        </div>
       </header>
       <section class="main-page-section">
         <div class="main-page-wrapper">
@@ -143,5 +152,7 @@
       </footer>
     </div>
     <script src="./main_js.js"></script>
+    <script src="./theme.js"></script>
+    <Script src="./gallery.js"></Script>
   </body>
 </html>

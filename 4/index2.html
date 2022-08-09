@@ -11,7 +11,7 @@
   <body>
     <video
       id="bgvideo"
-      class="bgvideo bgvideo2"
+      class="bgvideo"
       autoplay="autoplay"
       loop="loop"
       muted=""
@@ -22,15 +22,16 @@
       <div class="bg-video"></div>
       <header>
         <div class="header-img-box">
-          <a href="./index.html">
-            <img
-              src="./img/1639402748_2-abrakadabra-fun-p-soti-na-prozrachnom-fone-3.png"
-              alt="logo"
-              class="header-logo"
-            />
-          </a>
+          <img
+            src="./img/1639402748_2-abrakadabra-fun-p-soti-na-prozrachnom-fone-3.png"
+            alt="logo"
+            class="header-logo"
+          />
         </div>
-        <nav>
+        <div class="mobile-menu">
+          <span></span>
+        </div>
+        <nav class="navigation">
           <ul class="header-navigation">
             <li>
               <div class="header-link-container">
@@ -54,6 +55,13 @@
             </li>
           </ul>
         </nav>
+        <div class="theme-switch-wrapper">
+          <label class="theme-switch" for="checkbox">
+          <input type="checkbox" id="checkbox" />
+          <div class="slider round"></div>
+        </label>
+          <em class="switch-label">Switch</em>
+        </div>
       </header>
       <section class="main-page-section main-page-section2">
         <div class="main-page-wrapper main-page-wrapper2">
@@ -134,5 +142,7 @@
         <a href="tel:+3800989656054">+380 098 96 56 054 </a>
       </footer>
     </div>
+    <script src="./main_js.js"></script>
+    <script src="./theme.js"></script>
   </body>
 </html>

@@ -23,7 +23,7 @@
 
 .photo-section-paragraph{
     display: flex;
-    color: #fff;
+    color: var(--font-color);
     font-family: Oswald;
     font-size: 25px;
     padding: 30px 30px;
@@ -57,7 +57,7 @@
 .location-text{
     text-align: center;
     margin: 0 20px;
-    color: #fff;
+    color: var(--font-color);
 }
 
 @media screen and (max-width: 768px){
