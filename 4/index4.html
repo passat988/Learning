@@ -81,7 +81,6 @@
                         <img class="copy-img" src="./img/copy.jpg" alt=""
                       /></span>
                       або заповнити форму нижче
-                      <!-- href="tel:+3800989656054" -->
                     </li>
                     <li>
                       Вкажіть тару, в якій бажаєте отримати мед. Є два варіанти
@@ -121,23 +120,21 @@
                       </div>
                       <div class="radio">
                         <span>Тара</span> <br />
-                        <label>
-                          <input type="radio" value="Скляна" />Скляна
+                        <label for="container"></label>
+                          <input type="radio" value="Скляна" name="container"/>Скляна
                           <div class="radio-control glass"></div>
-                        </label>
-                        <label>
                           <input
                             type="radio"
                             value="Харчовий пластик"
+                            name="container"
                           />Харчовий пластик
                           <div class="radio-control plastic"></div>
-                        </label>
                       </div>
                       <div>
                         <label for="number"
                           >Номер для зворотнього зв'язку</label
                         >
-                        <input type="number" />
+                        <input type="text" name="number" />
                       </div>
                       <div>
                         <label for="product">Прорукція</label>
@@ -158,13 +155,14 @@
         </div>
       </section>
     </div>
-    <div class="overlay"><span class="copyred">Скопировано!</span></div>
+    <span class="copyed">Скопировано!</span>
     <footer>
       <span class="footer-location-text">
         Житомирська обл., Черняхівський р-н, с. Високе
       </span>
-      <span class="footer-location-text">Микола:</span>
-      <a href="tel:+3800989656054">+380 098 96 56 054 </a>
+      <span class="footer-name-text">Микола:</span>
+        <a href="tel:+380989656054">+380 098 96 56 054 </a>
+        <img class="copy-img" src="./img/copy.jpg" alt=""/>
     </footer>
     <script src="./main_js.js"></script>
     <script src="./theme.js"></script>

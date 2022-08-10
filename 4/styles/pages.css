@@ -36,6 +36,10 @@
     height: 320px;
 }
 
+.svg-star{
+    width: 300px;
+}
+
 .catalog-item-img{
     width: 250px;
     height: 320px;
@@ -109,17 +113,14 @@
     position: relative;
 }
 
-.copyred{
-    /* display: none;  */
+.copyed{
     position: absolute;
-    bottom: 43px;
-    z-index: 1000;
+    left: -100px;
+    z-index: 100;
+    transition: 0.2s;
+    color: var(--font-color);
 }
 
-.overlay{
-    position: absolute;
-    top: 0;
-    width: 100vw;
-    height: 100vh;
-    z-index: -1;
+.copyed_active{
+    transform: translateX(110px);
 }

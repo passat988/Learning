@@ -18,8 +18,9 @@ header{
 }
 
 .header-img-box{
-    height: 73px;
     margin: 20px;
+    align-items: center;
+    display: flex;
 }
 
 .header-navigation{
@@ -84,6 +85,7 @@ nav{
     width: 100%;
     font-family: Oswald;
     color: var(--font-color);
+    padding-bottom: 20px;
 }
 
 .main-page-wrapper{
@@ -100,6 +102,7 @@ nav{
     flex-direction: column;
     align-items: center;
     padding: 0 30px;
+    justify-content: center;
 }
 
 .main-heading{
@@ -125,7 +128,7 @@ nav{
 }
 
 .first-column h2, .second-column h2{
-    font-size: 18px;
+    font-size: 25px;
 }
 
 .advances-list li{
@@ -152,12 +155,17 @@ nav{
 }
 
 @media screen and (max-width: 768px) {
+    .header-img-box img{
+        width: 60px;
+    }
+
     .main-page-wrapper{
         padding-top: 70px;
     }
 
     .main-page-heading-container {
         padding: 0 15px;
+        justify-content: flex-start;
     }
 
     header{
@@ -189,16 +197,16 @@ nav{
         margin-top: 10px;
     }
 
+    .first-column h2, .second-column h2{
+        font-size: 18px;
+    }
+
     .advances{
         flex-direction: column;
     }
 
     .advances-list li{
         font-size: 16px;
-    }
-
-    .theme-switch-wrapper{
-        flex-direction: column;
     }
 
     .mobile-menu{
@@ -253,17 +261,8 @@ nav{
 
     .navigation._active{
         left: 0;
+        z-index: 3;
     }
-
-    /* nav::before{
-        content: "";
-        position: fixed;
-        width: 100%;
-        top: 0;
-        left: 0;
-        height: 113px;
-        background-color: var(--transparent-background);
-    } */
 
     .header-navigation > li{
         margin-bottom: 30px;
@@ -387,7 +386,7 @@ nav{
 
 @media screen and (max-width: 768px) {
     .main-page-wrapper2{
-        margin-top: 0px;
+        margin-top: 40px;
     }
 }
 
@@ -407,11 +406,17 @@ nav{
   
   #thumbs a {
     border: solid 1px #ccc;
-    /* width: 100px;
-    height: 100px; */
     padding: 3px;
     margin: 2px;
     float: left;
+  }
+
+  #thumbs li{
+    width: 20%;
+  }
+
+  #thumbs a img{
+    width: 100%;
   }
   
   #thumbs a:hover {
