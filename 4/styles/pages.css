@@ -29,6 +29,7 @@
 }
 
 .catalog-img-container{
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -36,8 +37,20 @@
     height: 320px;
 }
 
-.svg-star{
-    width: 300px;
+.favorite_star_gold, .favorite_star_silver{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    cursor: pointer;
+}
+
+.gold{
+    z-index: 1;
+} 
+
+.favorite_star_silver:hover{
+    opacity: 0.5;
 }
 
 .catalog-item-img{

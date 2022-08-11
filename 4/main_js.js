@@ -20,38 +20,6 @@ copyControl.addEventListener("click", () => {
   }, 2000);
 });
 
-// document.addEventListener('touchstart', handleTouchStart, false);
-// document.addEventListener('touchmove', handleTouchMove, false);
-
-// let xDown = null;
-// let yDown = null;
-
-// function handleTouchStart(evt) {
-//     xDown = evt.touches[0].clientX;
-//     yDown = evt.touches[0].clientY;
-// };
-
-// function handleTouchMove(evt) {
-//     if ( ! xDown || ! yDown ) {
-//         return;
-//     }
-
-//     let xUp = evt.touches[0].clientX;
-//     let yUp = evt.touches[0].clientY;
-
-//     let xDiff = xDown - xUp;
-//     let yDiff = yDown - yUp;
-//     if ( Math.abs( xDiff ) > Math.abs( yDiff ) ) {
-//         if ( xDiff > 0 ) {
-//             document.location.href = "./index2.html"
-//         } else {
-//             document.location.href = "./index3.html"
-//         }
-//     }
-
-//     xDown = null;
-//     yDown = null;
-// };
 
 document.addEventListener("touchstart", handleTouchStart, false);
 document.addEventListener("touchmove", handleTouchMove, false);
@@ -66,61 +34,47 @@ function handleTouchStart(evt) {
 
 let curUrl = document.URL;
 
-const pagesArr = ["", 2, 3, 4];
-
-let leftswipe = function () {
-  for (let i = 1; i < pagesArr.length; i++) {
-    if (
-      curUrl.indexOf(
-        "file:///C:/Users/User/Documents/GitHub/Learning/4/index" +
-          pagesArr[i] +
-          ".html"
-      ) != -1
-    ) {
-      document.location.href = "./index" + pagesArr[i + 1] + ".html";
-    }
-  }
-};
-
-let rightswipe = function () {
-  for (let i = 1; i < pagesArr.length; i++) {
-    if (
-      curUrl.indexOf(
-        "file:///C:/Users/User/Documents/GitHub/Learning/4/index" +
-          pagesArr[i] +
-          ".html"
-      ) != -1
-    ) {
-      document.location.href =
-        "file:///C:/Users/User/Documents/GitHub/Learning/4/index" +
-        pagesArr[i - 1] +
-        ".html";
-    }
-  }
-};
-
 function handleTouchMove(evt) {
-  if (!xDown || !yDown) {
-    return;
-  }
-
-  let xUp = evt.touches[0].clientX;
-  let yUp = evt.touches[0].clientY;
-
-  let xDiff = xDown - xUp;
-  let yDiff = yDown - yUp;
-
-  if (Math.abs(xDiff) > Math.abs(yDiff)) {
-    if (xDiff > 0) {
-      leftswipe();
-    } else {
-      rightswipe();
+    if ( ! xDown || ! yDown ) {
+        return;
     }
-  }
 
-  xDown = null;
-  yDown = null;
+    let xUp = evt.touches[0].clientX;
+    let yUp = evt.touches[0].clientY;
+
+    let xDiff = xDown - xUp;
+    let yDiff = yDown - yUp;
+    if ( Math.abs( xDiff ) > Math.abs( yDiff ) ) {
+        if ( xDiff > 0 ) {
+           if (curUrl.includes("index.html")){
+            document.location.href = "./index2.html"}
+           
+          if (curUrl.includes("index2.html")){
+            document.location.href = "./index3.html"}
+
+          if (curUrl.includes("index3.html")){
+            document.location.href = "./index4.html"}
+
+        
+        } else {
+          if (curUrl.includes("index4.html")){
+            document.location.href = "./index3.html"}
+          
+          if (curUrl.includes("index3.html")){
+            document.location.href = "./index2.html"}
+
+          if (curUrl.includes("index2.html")){
+            document.location.href = "./index.html"}
+      
+        }
+      }
+
+    xDown = null;
+    yDown = null;
+
+
 }
+
 
 const iconMenu = document.querySelector(".mobile-menu");
 if (iconMenu) {
