@@ -1,12 +1,7 @@
-document.body.onclick = (event) => {
-  const number = document.querySelector(".phone-number");
+const number = document.querySelector(".phone-number");
+number.onclick = (event) => {
   const copyImg = event.target;
-  if (
-    number.classList.contains("phone-number") ||
-    copyImg.classList.contains("copy-img")
-  ) {
-    navigator.clipboard.writeText(number.innerHTML);
-  }
+  navigator.clipboard.writeText(number.innerHTML);
 };
 
 const copyControl = document.querySelector(".number-and-img");
@@ -19,7 +14,6 @@ copyControl.addEventListener("click", () => {
     copyToast.classList.remove("copyed_active");
   }, 2000);
 });
-
 
 document.addEventListener("touchstart", handleTouchStart, false);
 document.addEventListener("touchmove", handleTouchMove, false);
@@ -35,46 +29,46 @@ function handleTouchStart(evt) {
 let curUrl = document.URL;
 
 function handleTouchMove(evt) {
-    if ( ! xDown || ! yDown ) {
-        return;
-    }
+  if (!xDown || !yDown) {
+    return;
+  }
 
-    let xUp = evt.touches[0].clientX;
-    let yUp = evt.touches[0].clientY;
+  let xUp = evt.touches[0].clientX;
+  let yUp = evt.touches[0].clientY;
 
-    let xDiff = xDown - xUp;
-    let yDiff = yDown - yUp;
-    if ( Math.abs( xDiff ) > Math.abs( yDiff ) ) {
-        if ( xDiff > 0 ) {
-           if (curUrl.includes("index.html")){
-            document.location.href = "./index2.html"}
-           
-          if (curUrl.includes("index2.html")){
-            document.location.href = "./index3.html"}
-
-          if (curUrl.includes("index3.html")){
-            document.location.href = "./index4.html"}
-
-        
-        } else {
-          if (curUrl.includes("index4.html")){
-            document.location.href = "./index3.html"}
-          
-          if (curUrl.includes("index3.html")){
-            document.location.href = "./index2.html"}
-
-          if (curUrl.includes("index2.html")){
-            document.location.href = "./index.html"}
-      
-        }
+  let xDiff = xDown - xUp;
+  let yDiff = yDown - yUp;
+  if (Math.abs(xDiff) > Math.abs(yDiff)) {
+    if (xDiff > 0) {
+      if (curUrl.includes("index.html")) {
+        document.location.href = "./index2.html";
       }
 
-    xDown = null;
-    yDown = null;
+      if (curUrl.includes("index2.html")) {
+        document.location.href = "./index3.html";
+      }
 
+      if (curUrl.includes("index3.html")) {
+        document.location.href = "./index4.html";
+      }
+    } else {
+      if (curUrl.includes("index4.html")) {
+        document.location.href = "./index3.html";
+      }
 
+      if (curUrl.includes("index3.html")) {
+        document.location.href = "./index2.html";
+      }
+
+      if (curUrl.includes("index2.html")) {
+        document.location.href = "./index.html";
+      }
+    }
+  }
+
+  xDown = null;
+  yDown = null;
 }
-
 
 const iconMenu = document.querySelector(".mobile-menu");
 if (iconMenu) {
