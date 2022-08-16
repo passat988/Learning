@@ -112,10 +112,6 @@ input:checked + .slider {
     background-color: var(--secondary-background);
 }
 
-.switch-label{
-    color: var(--color-main-headers);
-}
-
 @media screen and (max-width: 768px){
     [data-theme="dark"] {
         --slider-pos: 17px
