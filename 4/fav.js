@@ -19,8 +19,9 @@ for (let parsedItem of anyFav) {
         .querySelector(".favorite_star_gold")
         .classList.add("gold");
     }
-  }
+  } 
 }
+
 
 catalog.addEventListener("click", (event) => {
   if (event.target.className === "favorite_star_silver") {
@@ -33,7 +34,6 @@ catalog.addEventListener("click", (event) => {
     );
 
     localStorage.setItem("key", JSON.stringify(favArray));
-
     console.log(favArray);
   }
 });
