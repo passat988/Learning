@@ -4,14 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./main_styles.css" />
+    <link rel="stylesheet" href="./styles/main_styles.css" />
 
     <title>Натуральний мед</title>
   </head>
   <body>
     <video
       id="bgvideo"
-      class="bgvideo bgvideo2"
+      class="bgvideo"
       autoplay="autoplay"
       loop="loop"
       muted=""
@@ -22,13 +22,14 @@
       <div class="bg-video"></div>
       <header>
         <div class="header-img-box">
-          <img
+          <a href="./index.html"> <img
             src="./img/1639402748_2-abrakadabra-fun-p-soti-na-prozrachnom-fone-3.png"
             alt="logo"
             class="header-logo"
           />
+        </a>
         </div>
-       <nav>
+        <nav class="navigation">
           <ul class="header-navigation">
             <li>
               <div class="header-link-container">
@@ -37,7 +38,7 @@
             </li>
             <li>
               <div class="header-link-container">
-                <a href="./index2.html">Різновиди меду</a>
+                <a href="./index2.html" >Різновиди меду</a>
               </div>
             </li>
             <li>
@@ -52,70 +53,38 @@
             </li>
           </ul>
         </nav>
+        <div class="theme-switch-wrapper">
+          <label class="theme-switch" for="checkbox">
+          <input type="checkbox" id="checkbox" />
+          <div class="slider round"></div>
+        </label>
+        </div>
+        <div class="mobile-menu">
+          <span></span>
+        </div>
       </header>
       <section class="main-page-section main-page-section2">
         <div class="main-page-wrapper main-page-wrapper2">
           <h1 class="main-heading">Реманент для пасіки</h1>
           <div class="catalog">
-            <div class="catalog-item">
-              <div class="catalog-img-container">
-                <img
-                  src="./img/5d6d5304-5df0-472b-a37e-5ae7856a5d8d.jpg"
-                  class="catalog-item-img"
-                  alt="травневий мед"
-                />
-              </div>
-              <div class="characteristics">
-                <span class="catalog-item-name">Рамка</span>
-                <span class="catalog-item-price">145 , 230 , 300</span>
-              </div>
-              <a href="./index4.html" class="catalog-link catalog-item-link">Замовити</a>
-            </div>
-            <div class="catalog-item">
-              <div class="catalog-img-container">
-                <img
-                  src="./img/d577ad0d-64cf-4fd1-b212-d7d794af535d.jpg"
-                  class="catalog-item-img"
-                  alt="Осінній мед"
-                />
-              </div>
-              <div class="characteristics">
-                <span class="catalog-item-name">Корпус</span>
-                <span class="catalog-item-price">145 , 230 , 300</span>
-              </div>
-              <a href="./index4.html" class="catalog-link catalog-item-link">Замовити</a>
-            </div>
-            <div class="catalog-item">
-              <div class="catalog-img-container">
-                <img
-                  src=""
-                  class="catalog-item-img"
-                  alt="Кришка"
-                />
-              </div>
-              <div class="characteristics">
-                <span class="catalog-item-name">Кришка</span>
-                <span class="catalog-item-price"></span>
-              </div>
-              <a href="./index4.html" class="catalog-link catalog-item-link">Замовити</a>
-            </div>
-            <div class="catalog-item">
-              <div class="catalog-img-container">
-                <img src="" class="catalog-item-img" alt="Дно" />
-              </div>
-              <div class="characteristics">
-                <span class="catalog-item-name">Дно</span>
-                <span class="catalog-item-price"></span>
-              </div>
-              <a href="./index4.html" class="catalog-link catalog-item-link">Замовити</a>
-            </div>
           </div>
         </div>
       </section>
-       <footer>
-        <span class="footer-location-text">Житомирська обл., Черняхівський р-н, с. Високе</span>
-        <span>Микола + 380 098 96 56 054 </span>
-      </footer>
     </div>
+    <span class="copyed">Скопійовано!</span>
+    <footer>
+      <span class="footer-location-text">
+        Житомирська обл., Черняхівський р-н, с. Високе
+      </span>
+      <span class="footer-name-text">Микола:</span>
+      <span class="number-and-img">
+        <a class="phone-number">+380 098 96 56 054 </a>
+        <img class="copy-img" src="./img/copy.jpg" alt=""/>
+      </span>
+    </footer>
+    <script src="./tools.js"></script>
+    <script src="./main_js.js"></script>
+    <script src="./theme.js"></script>
+    <script src="/fav.js"></script>
   </body>
 </html>

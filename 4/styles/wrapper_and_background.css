@@ -1,0 +1,44 @@
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    background-color: var(--transparent-background);
+    background-attachment: fixed;
+}
+
+.bg-video{
+    position: absolute;
+    width: 100%;
+    max-width: 1282px;
+    top: 0;
+    z-index: -100;
+}
+
+.bgvideo{
+    object-fit: cover;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: -1000;
+    filter: blur(5px);
+}
+
+.main-page-wrapper2{
+    flex-direction: column;
+    margin-top: 140px;
+}
+
+.bgvideo2{
+    position: fixed;
+}
+
+@media screen and (max-width: 768px) {
+    .main-page-wrapper2{
+        margin-top: 0px;
+    }
+}

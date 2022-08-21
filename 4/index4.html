@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./main_styles.css" />
+    <link rel="stylesheet" href="./styles/main_styles.css" />
 
     <title>Натуральний мед</title>
   </head>
@@ -22,13 +22,14 @@
       <div class="bg-video"></div>
       <header>
         <div class="header-img-box">
-          <img
+          <a href="./index.html"> <img
             src="./img/1639402748_2-abrakadabra-fun-p-soti-na-prozrachnom-fone-3.png"
             alt="logo"
             class="header-logo"
           />
+        </a>
         </div>
-        <nav>
+        <nav class="navigation">
           <ul class="header-navigation">
             <li>
               <div class="header-link-container">
@@ -52,38 +53,119 @@
             </li>
           </ul>
         </nav>
+        <div class="theme-switch-wrapper">
+          <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider round"></div>
+          </label>
+        </div>
+        <div class="mobile-menu">
+          <span></span>
+        </div>
       </header>
       <section class="main-page-section main-page-section2">
         <div class="main-page-wrapper">
-          <div class="main-page-heading-container">
-            <h1 class="main-heading order-heading">Вже обрали, що замовити?</h1>
-            <div class="advances">
-              <div class="first-column">
-                <h2>Як замовити мед?</h2>
-                <ul class="advances-list">
-                  <li>Робити ваші замовлення Ви можете за телефоном <a href="tel:+3800989656054">+380 098 96 56 054 </a></li>
-                  <li>Є два варіанти тари: скляна (на обмін) та пластикова (1л, 10грн/відерце)</li>
-                </ul>
+          <div class="content-box">
+            <div class="main-page-heading-container">
+              <h1 class="main-heading order-heading">
+                Вже обрали, що замовити?
+              </h1>
+              <div class="advances">
+                <div class="first-column">
+                  <h2>Як замовити мед?</h2>
+                  <ul class="advances-list">
+                    <li>
+                      Робити ваші замовлення Ви можете за телефоном
+                      <span class="number-and-img"
+                        ><a class="phone-number">+380 098 96 56 054 </a>
+                        <img class="copy-img" src="./img/copy.jpg" alt=""
+                      /></span>
+                      або заповнити форму нижче
+                    </li>
+                    <li>
+                      Вкажіть тару, в якій бажаєте отримати мед. Є два варіанти
+                      тари: скляна (на обмін) та пластикова (1л, 10грн/відерце)
+                    </li>
+                  </ul>
+                </div>
+                <div class="second-column">
+                  <h2>Доставка</h2>
+                  <ul class="advances-list">
+                    <li>по м. Житомир безкоштовна</li>
+                    <li>в інші міста за рахунок покупця</li>
+                  </ul>
+                </div>
               </div>
-              <div class="second-column">
-                <h2>Доставка</h2>
-                <ul class="advances-list">
-                  <li>Доставка по м. Житомир безкоштовна</li>
-                  <li>Доставка в інші міста за рахунок покупця</li>
-                </ul>
+              <div class="catalog-link-container">
+                <a href="./index.html" class="catalog-link">На головну</a>
               </div>
-            </div>
-            <div class="catalog-link-container">
-              <a href="./index.html" class="catalog-link">На головну</a>
+              <button
+                id="myBtn"
+                class="catalog-link-button catalog-link"
+                value="Форма для замовлення"
+              >
+                Форма для замовлення
+              </button>
+              <div id="myModal" class="modal">
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <div class="form-wrap">
+                    <div class="profile">
+                      <h1>Замовити</h1>
+                    </div>
+                    <form>
+                      <div>
+                        <label for="name">Ім'я</label>
+                        <input type="text" name="name" required />
+                      </div>
+                      <div class="radio">
+                        <span>Тара</span> <br />
+                        <label for="container"></label>
+                          <input type="radio" value="Скляна" name="container"/>Скляна
+                          <div class="radio-control glass"></div>
+                          <input
+                            type="radio"
+                            value="Харчовий пластик"
+                            name="container"
+                          />Харчовий пластик
+                          <div class="radio-control plastic"></div>
+                      </div>
+                      <div>
+                        <label for="number"
+                          >Номер для зворотнього зв'язку</label
+                        >
+                        <input type="text" name="number" />
+                      </div>
+                      <div>
+                        <label for="product">Прорукція</label>
+                        <select name="product">
+                          <option>Оберіть продукт</option>
+                          <option value="Мед">Мед</option>
+                          <option value="Реманент">Реманент</option>
+                        </select>
+                        <div class="select-arrow"></div>
+                      </div>
+                      <button type="submit">Відправити</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
-     
-      <footer>
-        <span class="footer-location-text">Житомирська обл., Черняхівський р-н, с. Високе</span>
-        <span>Микола + 380 098 96 56 054 </span>
-      </footer>
     </div>
+    <span class="copyed">Скопійовано!</span>
+    <footer>
+      <span class="footer-location-text">
+        Житомирська обл., Черняхівський р-н, с. Високе
+      </span>
+      <span class="footer-name-text">Микола:</span>
+        <a href="tel:+380989656054">+380 098 96 56 054 </a>
+        <img class="copy-img" src="./img/copy.jpg" alt=""/>
+    </footer>
+    <script src="./main_js.js"></script>
+    <script src="./theme.js"></script>
+    <script src="./modal.js"></script>
   </body>
 </html>

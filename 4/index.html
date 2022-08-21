@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./main_styles.css" />
+    <link rel="stylesheet" href="./styles/main_styles.css" />
 
     <title>Натуральний мед</title>
   </head>
@@ -28,7 +28,7 @@
             class="header-logo"
           />
         </div>
-        <nav>
+        <nav class="navigation">
           <ul class="header-navigation">
             <li>
               <div class="header-link-container">
@@ -52,6 +52,15 @@
             </li>
           </ul>
         </nav>
+        <div class="theme-switch-wrapper">
+          <label class="theme-switch" for="checkbox">
+          <input type="checkbox" id="checkbox" />
+          <div class="slider round"></div>
+        </label>
+        </div>
+        <div class="mobile-menu">
+          <span></span>
+        </div>
       </header>
       <section class="main-page-section">
         <div class="main-page-wrapper">
@@ -82,16 +91,46 @@
           </div>
         </div>
       </section>
-      <section class="resume-section"></section>
       <section class="photo-section">
-        <img src="./img/118200914_363529841304670_3523098714375215375_n.jpg">
+        <div class="photo-section-container">
+        <div class="photo-container">
+          <img src="./img/118200914_363529841304670_3523098714375215375_n.jpg" />
+        </div>
+        <p class="photo-section-paragraph">
+          Розповім трохи про себе. Мене звати Микола. Я займаюсь пасічництвом з
+          15 років. Зараз вже не уявляю свого життя без пасіки. З року в рік
+          покращую свої знання про мед і пасіку, а зараз вже готовий
+          демонструвати свій продукт людям.
+        </p>
+      </div>
+      </section>
+      <section class="gallery">
+        <p><img id="largeImg" src="./img/eea204c4-b3e3-437c-a6bd-da27bba3cd4a.jpg" alt="Large image"></p>
+
+        <ul id="thumbs">
+          <li>
+            <a href="./img/eea204c4-b3e3-437c-a6bd-da27bba3cd4a.jpg" title="Image 2"><img src="./img/mini1.jpg"></a>
+          </li>
+          <li>
+            <a href="./img/c0159799-23bc-43c1-bb0d-d547232c0ab6.jpg" title="Image 3"><img src="./img/mini2.jpg"></a>
+          </li>
+          <li>
+            <a href="./img/9212239e-6a93-43ff-b46b-89c5fc089d1a.jpg" title="Image 4"><img src="./img/mini3.jpg"></a>
+          </li>
+          <li>
+            <a href="./img/eea204c4-b3e3-437c-a6bd-da27bba3cd4a.jpg" title="Image 5"><img src="./img/mini1.jpg"></a>
+          </li>
+          <li>
+            <a href="./img/9212239e-6a93-43ff-b46b-89c5fc089d1a.jpg" title="Image 6"><img src="./img/mini3.jpg"></a>
+          </li>
+        </ul>
       </section>
       <section class="location">
         <div class="location-header">
           <span class="location-text">
-            Пасіка знаходиться в екологічно чистому місті, в далі від
+            Пасіка знаходиться в екологічно чистому місці, в далі від
             промислових зон
-            </span>
+          </span>
         </div>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20342.721649077383!2d28.784139993671687!3d50.40681553751316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472c788d8a952a0b%3A0xc42d059bedb9bc34!2z0JLQuNGB0L7QutC1LCDQltC40YLQvtC80LjRgNGB0YzQutCwINC-0LHQu9Cw0YHRgtGMLCAxMjM0MQ!5e0!3m2!1suk!2sua!4v1657805649349!5m2!1suk!2sua"
@@ -102,13 +141,23 @@
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
-      </section>
-      <footer>
-        <span class="footer-location-text">
-          Житомирська обл., Черняхівський р-н, с. Високе
-        </span>
-        <span>Микола + 380 098 96 56 054 </span>
-      </footer>
+      </section> 
     </div>
+    <button class="weather">Погода</button>
+    <footer>
+      <span class="copyed">Скопійовано!</span>
+      <span class="footer-location-text">
+        Житомирська обл., Черняхівський р-н, с. Високе
+      </span>
+      <span class="footer-name-text">Микола:</span>
+      <span class="number-and-img">
+        <a class="phone-number">+380 098 96 56 054 </a>
+        <img class="copy-img" src="./img/copy.jpg" alt=""/>
+      </span>
+    </footer>
+    <script src="./main_js.js"></script>
+    <script src="./theme.js"></script>
+    <Script src="./gallery.js"></Script>
+    <script src="./weather.js"></script>
   </body>
 </html>
